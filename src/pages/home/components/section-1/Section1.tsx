@@ -2,9 +2,11 @@ import React from 'react'
 
 const Section1 = () => {
     return (
-        <div>
+        <section className='brand-section pt-12'>
+            <div className="container">
 
-        </div>
+            </div>
+        </section>
     )
 }
 
