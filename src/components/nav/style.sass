@@ -1,0 +1,76 @@
+header
+    nav
+        .hd-menu
+            @apply w-full
+            &::after
+                content: ''
+                width: 66.66%
+                height: 73px
+                position: absolute
+                bottom: 10px
+                right: 0
+                border-radius: 10px
+                background: #edbc32
+                border: 1px solid #edbc32
+                clip-path: polygon(6% 0%, 100% 0%, 100% 100%, 0% 100%)
+                z-index: 0
+                @apply hidden md:block
+            .nav-bar
+                z-index: 10
+                .nav-item
+                    cursor: pointer
+                    .nav-link
+                        white-space: nowrap
+                        position: relative
+                        font-weight: 700
+                        &::after
+                            content: ''
+                            position: absolute
+                            top: 100%
+                            left: 50%
+                            transform: translateX(-50%)
+                            width: 0
+                            height: 1px
+                            background: #333
+                            transition: all ease-in-out .3s
+                    .mega-nav
+                        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3)
+                        border-radius: 10px
+                        @apply absolute min-w-[900px] w-full right-0 top-[150%] p-10 bg-white z-50 opacity-0 invisible transition-all delay-75
+                        .mega-item
+                            h2
+                                @apply text-base
+                        &::after
+                            content: '\e5c7'
+                            font-family: Material Icons
+                            position: absolute
+                            color: #fff
+                            font-size: 30px
+                            top: -25px
+                            right: 5%
+                    &.mega-hover
+                        position: relative
+                        &:hover
+                            .mega-nav
+                                @apply bottom-auto top-[85%] opacity-100 visible
+                    &:hover
+                        .nav-link
+                            &::after
+                                width: 100%
+
+    .mobile-nav
+        @apply absolute bg-white top-full right-0 z-40 flex justify-end items-center w-screen px-6 py-4 shadow-xl transition-all
+.fixed-social
+    right: -5%
+    @apply fixed top-1/2 -translate-y-1/2 z-50
+    ul
+        @apply flex flex-col gap-4
+        li
+            a
+                transform: translateX(0px)
+                transition: all 0.6s ease
+            &:hover
+                a
+                    transform: translateX(-90px)
+    @media screen and ( max-width: 1366px )
+        right: -7%

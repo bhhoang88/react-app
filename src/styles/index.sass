@@ -1,0 +1,39 @@
+@import "tailwindcss/base"
+@import "tailwindcss/components"
+@import "tailwindcss/utilities"
+@import "../components/nav/style"
+@import "./_mixin"
+@import "./_reset"
+@import "./button"
+@import "../components/footer/style"
+@import "../components/banner/style"
+@import ./fonts
+
+@layer components
+    *,
+    *::before,
+    *::after
+        box-sizing: border-box
+
+    *::-webkit-scrollbar-track
+        background-color: #999
+
+    *::-webkit-scrollbar
+        width: 0
+
+    *::-webkit-scrollbar-thumb
+        border-radius: 0
+        border: r(2px) solid #999
+
+    html
+        -webkit-text-size-adjust: 100%
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+    body
+        line-height: 1.5
+        font-weight: 400
+        color: #111
+        @apply font-body
+
+    img
+        display: inline

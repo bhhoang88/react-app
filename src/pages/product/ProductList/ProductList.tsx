@@ -1,0 +1,12 @@
+// src/components/ProductList.tsx
+import React from 'react';
+
+const ProductList: React.FC = () => {
+    return (
+        <div>
+            <h2>Danh sách sản phẩm</h2>
+        </div>
+    );
+};
+
+export default ProductList;

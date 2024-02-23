@@ -1,0 +1,63 @@
+{
+    "name": "my-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@babel/core": "^7.23.9",
+        "@babel/helper-create-class-features-plugin": "^7.23.10",
+        "@babel/helper-replace-supers": "^7.22.20",
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "@babel/plugin-syntax-flow": "^7.23.3",
+        "@babel/plugin-syntax-private-property-in-object": "^7.14.5",
+        "@babel/plugin-transform-react-jsx": "^7.23.4",
+        "@fontsource/material-icons": "^5.0.13",
+        "@heroicons/react": "^2.1.1",
+        "@material-tailwind/react": "^2.1.9",
+        "@testing-library/dom": "^7.31.2",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.81",
+        "@types/react": "^18.2.19",
+        "@types/react-dom": "^18.2.19",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-icons": "^5.0.1",
+        "react-router-dom": "^6.22.0",
+        "react-scripts": "5.0.1",
+        "resolve-url-loader": "^5.0.0",
+        "sass": "^1.70.0",
+        "swiper": "^11.0.6",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/babel__traverse": "^7.20.5",
+        "@types/estree": "^1.0.5"
+    }
+}

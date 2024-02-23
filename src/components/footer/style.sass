@@ -1,0 +1,33 @@
+footer
+    background-image: url('../../../public/img/ft_bg_img.png')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+
+    .footer-top-subscribe
+        background-image: linear-gradient(to right, #d2a116, #edbc32)
+        .form-group
+            .focus\:border-gray-900:focus
+                @apply border-lime-600
+
+    .ft-main
+        background: rgba(0, 0, 0, 0.7)
+        .img-block
+            a
+                @apply block w-[154px]
+.back-to-top
+    position: fixed
+    bottom: 40px
+    right: 40px
+    text-align: center
+    height: 40px
+    width: 40px
+    line-height: 40px
+    background-color: #edbc32
+    color: #fff
+    opacity: 0.6
+    cursor: pointer
+    font-size: 32px
+    transition: all ease-in-out .3s
+    &:hover
+        opacity: 1
