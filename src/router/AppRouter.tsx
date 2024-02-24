@@ -39,27 +39,27 @@ const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/gioi-thieu",
+                path: "/about",
                 element: <About />,
             },
             {
-                path: "/san-pham",
+                path: "/collections",
                 element: <ProductList />,
             },
             {
-                path: "/san-pham/:id",
+                path: "/collections/:id",
                 element: <ProductDetail />,
             },
             {
-                path: "/tin-tuc",
+                path: "/news",
                 element: <News />,
             },
             {
-                path: "/tin-tuc/:id",
+                path: "/news/:id",
                 element: <NewsDetail />,
             },
             {
-                path: "/lien-he",
+                path: "/contact",
                 element: <Contact />,
             },
         ],

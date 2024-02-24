@@ -21,6 +21,7 @@ const Banner = () => {
                 navigation={true}
                 modules={[Autoplay, Pagination]}
                 className="mySwiper"
+                loop={true}
             >
                 <SwiperSlide>
                     <div className="swiper-inner">

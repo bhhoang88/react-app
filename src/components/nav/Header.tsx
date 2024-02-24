@@ -18,10 +18,10 @@ const megaNavData = [
     { title: 'Phụ tùng khác', subItems: ['Bộ khởi động điện', 'Đồng hồ - Cảm biến', 'Dây cua-roa', 'Keo các loại'] },
 ];
 const itemNavData = [
-    { title: 'giới thiệu', id: 0, link: '/gioi-thieu' },
-    { title: 'sản phẩm', id: 1, link: '/san-pham' },
-    { title: 'tin tức', id: 2, link: '/tin-tuc' },
-    { title: 'liên hệ', id: 3, link: '/lien-he' },
+    { title: 'giới thiệu', id: 0, link: '/about' },
+    { title: 'sản phẩm', id: 1, link: '/collections' },
+    { title: 'tin tức', id: 2, link: '/news' },
+    { title: 'liên hệ', id: 3, link: '/contact' },
 ];
 
 const Header: React.FC = () => {
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
 
     const SubNavItem: React.FC<SubNavItemProps> = ({ text }) => (
         <li className="sub-item" onClick={() => setMobileMenuOpen(false)}>
-            <Link to={'/san-pham'} className='text-black text-sm block py-2'>
+            <Link to={'/collections'} className='text-black text-sm block py-2'>
                 {text}
             </Link>
         </li>

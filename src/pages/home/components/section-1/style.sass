@@ -1,0 +1,16 @@
+.brand-section
+    .brand-item
+        .brand-infor
+            h2
+                text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3)
+                @apply relative
+                &::before
+                    content: ''
+                    transition: all ease-in-out .3s
+                    @apply absolute w-0 h-px -bottom-0.5 bg-[#350057] left-1/2 -translate-x-1/2
+        &:hover
+            .brand-infor
+                h2
+                    color: #350057
+                    &::before
+                        width: 100%
