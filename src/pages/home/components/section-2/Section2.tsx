@@ -13,9 +13,18 @@ const Section2 = () => {
         {
             label: "CHỔI GẠT MƯA",
             value: "html",
-            desc: `It really matters and then like it really doesn't matter.
-            What matters is the people who are sparked by it. And the people 
-            who are like offended by it, it doesn't matter.`,
+            product: [
+                {
+                    title: 'Chổi gạt mưa 47.5cm Hella',
+                    price: '$190.00',
+                    image: '/product_images/chomuatmua_hella.jpg'
+                },
+                {
+                    title: 'Chổi gạt mưa 63cm Honda',
+                    price: '$280.00',
+                    image: '/product_images/chomuatmua_honda.png'
+                }
+            ]
         },
         {
             label: "DẦU ĐỘNG CƠ",
