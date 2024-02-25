@@ -31,7 +31,7 @@ const brands = [
 
 const Section1 = () => {
     return (
-        <section className='brand-section pt-12'>
+        <section className='brand-section py-12'>
             <div className="container">
                 <div className="grid grid-cols-12 gap-6">
                     {brands.map((brand, index) => (
